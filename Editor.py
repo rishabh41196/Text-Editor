@@ -89,7 +89,7 @@ class MainWindow(wx.Frame):
 		#It will control the style of text to be multilined and word wrapped
 		
 		#To assign keys for zooming in and out
-		self.control.CmdKeyAssign(ord('='),stc.STC_SCMOD_CTRL,stc.STC_CMD_ZOOMIN)  # Ctrl + is Zoom in
+		self.control.CmdKeyAssign(ord('+'),stc.STC_SCMOD_CTRL,stc.STC_CMD_ZOOMIN)  # Ctrl + is Zoom in
 		self.control.CmdKeyAssign(ord('-'),stc.STC_SCMOD_CTRL,stc.STC_CMD_ZOOMOUT)  # Ctrl - is Zoom out
 		
 		#To set editor to not show white space
